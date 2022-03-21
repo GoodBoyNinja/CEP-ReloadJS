@@ -5,7 +5,7 @@ If you are new to nodeJS because you are coming from extendscript background, le
 Once you are comfortable with it and have everything installed, this proccess takes a few seconds.
 
 # What does it do?
-It creates a copy of your `src` folder to the `extensions` folder [(see paths below)](https://github.com/GoodBoyNinja/CEP-Auto-Folder-Copy/blob/main/README.md#result) where After-Effects loads it from, so you can reload the extension in After-Effects but still work from outside that folder.
+It creates a copy of your `src` folder to the `extensions` folder [(see paths below)](#result) where After-Effects loads it from, so you can reload the extension in After-Effects but still work from outside that folder.
 
 
 # Setup:
