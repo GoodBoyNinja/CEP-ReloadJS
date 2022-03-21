@@ -11,7 +11,7 @@ const thisFolderName = path.basename(__dirname);
 const targetFolderName = thisFolderName + " Dev Reloading Copy";
 
 var userName = os.userInfo().username;
-var extensionsFolder = isWin ? `C:/Users/${userName}/AppData/Roaming/Adobe/CEP/extensions` : `/Users/${userName}/Library/Application Support/Adobe/CEP/extensions;`;
+var extensionsFolder = isWin ? `C:/Users/${userName}/AppData/Roaming/Adobe/CEP/extensions` : `/Users/${userName}/Library/Application Support/Adobe/CEP/extensions`;
 function copySrc() {
     fs.access(path.join(__dirname, copyMe), fs.constants.F_OK, (err) => {
         if (err) {
