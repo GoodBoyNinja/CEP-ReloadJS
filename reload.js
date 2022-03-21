@@ -8,7 +8,7 @@ const isWin = process.platform === "win32";
 // user properties
 const copyMe = 'src'; // sub folder
 const thisFolderName = path.basename(__dirname);
-const targetFolderName = thisFolderName + " Dev reloading copy";
+const targetFolderName = thisFolderName + " Dev Reloading Copy";
 
 var userName = os.userInfo().username;
 var extensionsFolder = isWin ? `C:/Users/${userName}/AppData/Roaming/Adobe/CEP/extensions` : `/Users/${userName}/Library/Application Support/Adobe/CEP/extensions;`;
