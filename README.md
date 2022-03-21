@@ -5,7 +5,7 @@ If you are new to nodeJS because you are coming from extendscript background, le
 Once you are comfortable with it and have everything installed, this proccess takes a few seconds.
 
 # What does it do?
-It creates a copy of your `src` folder (working directory) in  (windows) `C:\Users\**username**\AppData\Roaming\Adobe\CEP\extensions` or (mac) `/Users/**userName**/Library/Application Support/Adobe/CEP/extensions` so you can reload the extension in After-Effects but still work from outside the extensions folder.
+It creates a copy of your `src` folder to the `extensions` folder where After-Effects loads it from, so you can reload the extension in After-Effects but still work from outside that folder.
 
 
 # Setup:
