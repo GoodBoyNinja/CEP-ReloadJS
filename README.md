@@ -2,7 +2,7 @@
 A way to work on CEP projects outside of the adobe extensions folder and without using Symbolic Link (Which can cause accidental deletion of files)
 
 If you are new to `node.js` because you are coming from extendscript background, learn it! It's worth it. Don't be afraid of the spooky **TeRmINaL**.
-Once you are comfortable with it and have everything installed, this proccess takes a few seconds.
+Once you are comfortable with it and have everything installed, this proccess takes a few seconds to set-up.
 
 # What does it do?
 It creates a copy of your `src` folder to the `extensions` folder [(see paths below)](#result) where After-Effects loads it from, so you can reload the extension in After-Effects but still work from outside that folder.
