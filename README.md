@@ -51,8 +51,9 @@ If done correctly, you will see the terminal updating on each save without error
 To verify the result, go to:
  - windows: `C:\Users\**username**\AppData\Roaming\Adobe\CEP\extensions`
  - mac: `/Users/**userName**/Library/Application Support/Adobe/CEP/extensions`
-A folder named `myExtension Dev reloading copy` should exist there, when `myExtension` is the name of the folder `reload.js` lives inside of.
-If it's there, you should be able to open your extension from After-Effects and have it reload when you make changes (check this post if you want it to [refresh automatically.](https://community.adobe.com/t5/illustrator-discussions/reload-cep-panel-extension-and-its-extendscript-without-restarting-illustrator/m-p/10844579)
+
+A folder named `myExtension Dev reloading copy` should exist there, where `myExtension` is the name of the folder `reload.js` lives inside of.
+If it's there, you should be able to open your extension from After-Effects and have it reload when you make changes (Follow this post to learn [how to refresh the panel without closing and reopening it.](https://community.adobe.com/t5/illustrator-discussions/reload-cep-panel-extension-and-its-extendscript-without-restarting-illustrator/m-p/10844579)
 
 # Why not use symbolic link?
 Because when using symbolic link you are at risk of deleting your `src` folder and lose your progress using a ZXP installer to remove your extension (In the case that you are testing out your ZXP file and want to uninstall / reinstall it). It happened to me multiple times and dropbox saved my butt.
