@@ -19,7 +19,8 @@ function copySrc() {
             return;
         }
     });
-    gulp.src(path.join(__dirname, 'src/**/*'))
+    // include hidden files
+    gulp.src(path.join(__dirname, copyMe + '/**/*'), { dot: true })
         .pipe(gulp.dest(path.join(extensionsFolder, targetFolderName)));
 
 };
@@ -27,4 +28,3 @@ function copySrc() {
 
 // copy
 copySrc();
- 
