@@ -1,7 +1,7 @@
 # CEP-Auto-Folder-Copy
 A way to work on CEP projects outside of the adobe extensions folder and without using Symbolic Link (Which can cause accidental deletion of files)
 
-If you are new to nodeJS because you are coming from extendscript background, learn it! It's worth it. Don't be afraid of the spooky **TeRmINaL**.
+If you are new to `node.js` because you are coming from extendscript background, learn it! It's worth it. Don't be afraid of the spooky **TeRmINaL**.
 Once you are comfortable with it and have everything installed, this proccess takes a few seconds.
 
 # What does it do?
