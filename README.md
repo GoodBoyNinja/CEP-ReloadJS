@@ -9,7 +9,7 @@ It creates a copy of your `src` folder to the `extensions` folder [(see paths be
 
 
 # Setup:
-1. Install [nodejs](https://nodejs.org/en/) and open a new Terminal in Visual Studio Code.
+1. Install [nodejs](https://nodejs.org/en/), open your extension folder as a folder in Visual Studio Code and open a new terminal.
 2. From the terminal, install [nodemon](https://nodemon.io/). Nodemon watches the folder for changes, then runs a script when those exist.
 3. to create a `package.json` file in your extension folder, use `npm init` from the same terminal. If this is new to you, [learn here](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 4. In your `package.json` add gulp as a dependency, as well as a nodemon configuration in order to make sure it watches the desired file types for changes.
