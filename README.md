@@ -47,7 +47,7 @@ myExtension/
 3. Make a change to a file and save it.
 
 # result
-If done correctly, you will see the terminal updating on each save.
+If done correctly, you will see the terminal updating on each save without errors.
 To verify the result, go to:
  - windows: `C:\Users\**username**\AppData\Roaming\Adobe\CEP\extensions`
  - mac: `/Users/**userName**/Library/Application Support/Adobe/CEP/extensions`
