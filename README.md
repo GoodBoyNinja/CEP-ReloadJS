@@ -19,7 +19,7 @@ It creates a copy of your `src` folder to the `extensions` folder [(see paths be
     "gulp": "^4",
   },
     "nodemonConfig": {
-    "ext": "js,html, jsx, css, scss, json, md"
+    "ext": "js,html, jsx, css, scss, json, md, xml"
   }
 ```
 5. from the terminal in Visual Studio Code, run `npm install` and give it a second to do its thing.
