@@ -7,6 +7,9 @@ Once you are comfortable with it and have everything installed, this proccess ta
 # What does it do?
 It creates a copy of your `src` folder to the `extensions` folder [(see paths below)](#result) where After-Effects loads it from, so you can reload the extension in After-Effects but still work from outside that folder.
 
+![image](https://user-images.githubusercontent.com/66829812/178119160-7ed43c71-2f3f-4fd5-a9f0-757ed0231473.png)
+
+
 
 # Setup:
 1. Install [nodejs](https://nodejs.org/en/), open your extension folder as a folder in Visual Studio Code and open a new terminal.
