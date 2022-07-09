@@ -1,4 +1,4 @@
-# CEP-Auto-Folder-Copy
+# CEP-ReloadJS - Work outside the extension folder
 A way to work on CEP projects outside of the adobe extensions folder and without using Symbolic Link (Which can cause accidental deletion of files)
 
 If you are new to `node.js` because you are coming from extendscript background, learn it! It's worth it. Don't be afraid of the spooky **TeRmINaL**.
