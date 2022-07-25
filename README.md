@@ -23,7 +23,7 @@ myExtension/
         |_dist/
         
 ```
-* If you don't want to work that way, feel free to modify `reload.js` to your liking.
+* If you don't want to work that way, feel free to modify [reload.js](reload.js) to your liking.
 ---
 
 ### Machine Setup (1 time)
