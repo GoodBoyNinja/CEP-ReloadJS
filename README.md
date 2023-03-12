@@ -25,7 +25,7 @@ I created it since I was eager to start making something already. I was overwhel
 4. `npm run dev` to start the vite server and open the extension in After-Effects.
 
 My folder tends to look like this:
-```js
+```
 MyExtension
 |
 |__📁 Public
