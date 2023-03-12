@@ -1,4 +1,70 @@
+# UPDATE: DON'T DO IT
+This script copy-pastes your entire project into the Extensions folder every time you save a file.
+
+It has been proven useful in my dated workflow and I have used it to build extensions from start to finish.
+
+That said, this script is a band-aid solution to an even bigger problem: I did not understand how to properly set up a development environment.
+
+I created it since I was eager to start making something already. I was overwhelmed by the amount of setup and learning that has to be done all at once when making a CEP extension.
+<br>
+
+## What I should have done instead:
+1. My workflow these days consists of using [Vite](https://vitejs.dev) to setup a new project and symlink the entire folder into the extension folder. See: [Symlink on Mac](https://www.howtogeek.com/297721/how-to-create-and-use-symbolic-links-aka-symlinks-on-a-mac/) or [Symlink on Windows](https://winaero.com/create-symbolic-link-windows-10-powershell/)
+2. Alongside the `index.html` file create an `index-dev.html` file and point the `manifest.xml` to it: 
+```xml
+<MainPath>./index-dev.html</MainPath>
+```
+3. In `index-dev.html` add the following script:
+```html
+<script>
+    window.location.href = "http://localhost:5173/";
+</script>
+
+<!-- The port number reflects Vite's server. Run `npm run dev` to find out, or set it yourself in vite.config.js -->
+```
+4. `npm run dev` to start the vite server and open the extension in After-Effects.
+
+My folder tends to look like this:
+```js
+MyExtension
+|
+|__📁 Public
+    |_📄 CSInterface.js
+|__📁 src
+|   |_ // Your source code
+|__📁 dist
+|__📁 node_modules
+|__📁 package.json
+|__📁 vite.config.js
+|__📁 CSXS
+|   |_📄 manifest.xml
+|__📄 index.html // Vite will build this file
+|__📄 index-dev.html // After-Effects will load this file, then redirect to localhost:5173
+|__📄 vite.config.js
+|__📄 package.json
+|
+|__📄 .gitignore
+|__📄 .debug
+
+```
+
+There is more setup to do, but this is the gist of getting started.
+
+
+
+If you are intimidated by making your first extension, see: [Your-First-CEP-Panel](https://github.com/GoodBoyNinja/Your-First-CEP-Panel)
+
+
+
+If you wish to continue using this script anyways (I don't recommend it), read on.
+
+
+<br><br><br>
+
+
+
 # CEP-ReloadJS - Work outside the extension folder
+__Deprecated!__
  * While this readme is quite long, the whole proccess takes just a few minutes to setup. After the first time there is zero to no setup involved
 
 reload.js lets you develop your extension anywhere on your machine. Everytime you hit `save / ctrl+s` this script will copy your project and paste it in Adobe's extensions folder. From there you can refresh your extension inside After-Effects and see your changes taking place in real time.
